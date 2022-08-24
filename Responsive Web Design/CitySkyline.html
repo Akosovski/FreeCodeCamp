@@ -15,6 +15,7 @@
             --window-color1: black;
             --window-color2: #8cd9b3;
             --window-color3: #d98cb3;
+            --window-color4: #8cb3d9;
         }
         * {
             border: 1px solid black;
@@ -34,13 +35,20 @@
             position: absolute;
             top: 0;
         }
+        .building-wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .window-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
         /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
         .bb1{
             width: 10%;
             height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         .bb2{
             width: 10%;
@@ -55,6 +63,11 @@
                 var(--building-color3),
                 var(--window-color3) 15%
             );
+        }
+        .bb4-window{
+            width: 18%;
+            height: 90%;
+            background-color: var(--window-color4);
         }
         .bb4{
             width: 11%;
@@ -149,22 +162,27 @@
         <div class="background-buildings">
             <div></div>
             <div></div>
-            <div class="bb1">
+            <div class="bb1 building-wrap">
                 <div class="bb1a bb1-window"></div>
                 <div class="bb1b bb1-window"></div>
                 <div class="bb1c bb1-window"></div>
                 <div class="bb1d"></div>
             </div>
-            <div class="bb2">
+            <div class="bb2 building-wrap">
                 <div class="bb2a"></div>
                 <div class="bb2b"></div>
             </div>
-            <div class="bb3"></div>
+            <div class="bb3 building-wrap"></div>
             <div></div>
-            <div class="bb4">
+            <div class="bb4 building-wrap">
                 <div class="bb4a"></div>
                 <div class="bb4b"></div>
-                <div class="bb4c"></div>
+                <div class="bb4c window-wrap">
+                    <div class="bb4-window"></div>
+                    <div class="bb4-window"></div>
+                    <div class="bb4-window"></div>
+                    <div class="bb4-window"></div>
+                </div>
             </div>
             <div></div>
             <div></div>
