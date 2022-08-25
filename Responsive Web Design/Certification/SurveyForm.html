@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Akosovski's Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+    *{
+        margin: 0;
+    }
+    #titler{
+        background: lightblue;
+    }
+    #title {
+        margin-top: 30px;
+        font-size: 35px;
+        text-align: center;
+    }
+    #description {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #description span{
+        font-weight: bold;
+    }
+    .form-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    fieldset label{
+        font-size: 22px;
+        margin: 5px;
+    }
+    #spacer{
+        height: 10px;
+    }
+    #submit{
+        margin-top: 20px;
+        width: 200px;
+        height: 60px;
+        text-align: center;
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #one{
+        background-color: lightcoral;
+    }
+    #one input{
+        margin-left: 20px;
+        width: 250px;
+        height: 25px;
+    }
+    #two{
+        background-color: lightgoldenrodyellow;
+    }
+    #three{
+        background-color: lightseagreen;
+    }
+  </style>
+  <body>
+    <div id="titler">
+        <h1 id="title">Akosovski's Survey Form</h1>
+    </div>
+
+    <p id="description">My <span>fast & simple</span> survey form. What written here is unreal.</p>
+
+    <div class="form-container">
+        <form action="#" id="survey-form">
+            <fieldset id="one">
+                <br>
+                <label id="name-label">Name :<input id="name" type="text" placeholder="Insert name..." required/></label>
+                <br><br>
+                <label id="email-label">Email :<input id="email" type="email" placeholder="Insert email..." required/></label>
+                <br><br>
+                <label id="number-label">Number (8-20):<input id="number" type="number" placeholder="Insert number..."/ min="8" max="20" required></label>
+                <br><br>
+            </fieldset>
+            <br>
+            <fieldset id="two">
+                <label id="dropdown-label">Choose below: </label>
+                <select id="dropdown">
+                    <option>(select one)</option>
+                    <option>one</option>
+                    <option>two</option>
+                    <option>three</option>
+                </select><br><br>
+                
+                <label id="radio-label">Radio Buttons: </label><br>
+                <label ><input name="radio-name" type="radio" value="one"/> Radio 1</label><br>
+                <label ><input name="radio-name" type="radio" value="one"/> Radio 2</label><br>
+                <br>
+                <label id="radio-label">Checkboxes: </label><br>
+                <label name="check-name"><input type="checkbox" value="one"/> Checkbox 1</label><br>
+                <label name="check-name"><input type="checkbox" value="one"/> Checkbox 2</label><br>
+            </fieldset>
+            <br>
+            <fieldset id="three">
+                <label id="area-label">Text Area: </label><br>
+                <div id="spacer"></div>
+                <textarea placeholder="Insert comments here..."></textarea><br>
+            </fieldset>
+      
+            <input id="submit" type="submit"/>
+        </form>
+    </div>
+    
+  </body>
+</html>
