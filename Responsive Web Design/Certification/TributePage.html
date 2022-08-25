@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="freeCodeCamp Tribute Page" />
+    <title>Tribute to Amsel</title>
+  </head>
+  <style>
+    #image{
+        width: 750px;
+        height: auto;
+        margin: auto;
+    }
+    main h3{
+        font-size: 22px;
+    }
+    #caption{
+        text-align: center;
+        font-size: 20px;
+    }
+    #tribute-desc{
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    #first-part, #second-part{
+        margin-top: 5px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    #tribute-link{
+        font-size: 24px;
+        margin-left: 35px;
+        margin-top: 25px;
+    }
+    @media (max-width: 768px) {
+        #first-part, #second-part{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #tribute-link{
+            margin-left: 15px;
+            margin-bottom: 20px;
+        }
+    }
+  </style>
+  <body>
+      <main id="main">
+        <h1 id="title" style="text-align:center;">Heinrich Amsel</h1>
+
+        <div id="img-div">
+            <img id="image" src="https://cdn.discordapp.com/attachments/995173807750926346/995173882501800016/Heinrich_Amsel.webp"  style="max-width: 100%; height: auto; justify-content: center; display: block;">
+            <div id="img-caption">
+                <p id="caption">"<em>The mudak in the car is General Heinrich Amsel, architect of Stalingrad's misery.</em>"</p>
+                <h3 style="text-align:center; margin-top: -13px;"> - Sergeant Reznov</h3>
+                <p style="text-align:center; margin-top: -20px; font-size: 20px;">Stalingrad, September 17th 1942</p>
+            </div>
+        </div>
+
+        <div id="tribute-info">
+            <div id="first-part">
+                <p id="tribute-desc"><span style="font-size: 25px; font-weight: bold;">Lieutenant General Heinrich Amsel</span> served as the commander of a German unit based in the area of Red Square in Stalingrad. Given his rank, 
+                    he was most likely a divisional commander and given the area that his command building was located. 
+                    During the German occupation of Stalingrad, Amsel gained infamy for orchestrating brutal massacres against Soviet soldiers and civilians. 
+                    His role in the occupation led to Sergeant Reznov spending days relentlessly stalking Amsel. It was not until September 17, 1942, 
+                    after a massacre of soldiers from the 62nd Rifle Division took place, that Reznov enlisted the aid of Private Petrenko in helping him track down and assassinate Amsel.
+                </p>
+            </div>
+
+            <div id="second-part">
+                <p id="tribute-desc">During the German occupation of Stalingrad, 
+                    Amsel gained infamy for orchestrating brutal massacres against Soviet soldiers and civilians. 
+                    His role in the occupation led to Sergeant Reznov spending days relentlessly stalking Amsel. 
+                    It was not until September 17, 1942, after a massacre of soldiers from the 62nd Rifle Division 
+                    took place, that Reznov enlisted the aid of Private Petrenko in helping him track down and assassinate 
+                    Amsel.</p>
+            </div>
+            
+            <a id="tribute-link" href="https://callofduty.fandom.com/wiki/Heinrich_Amsel" target="_blank">Source Link</a>
+        </div>
+      </main>
+  </body>
+</html>
