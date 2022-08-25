@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #cc0000;
+            color: white;
+            font-family: 'Exo 2', sans-serif;
+            padding: 1em;
+        }
+
+        @media (max-width: 768px) {
+            #footer {
+                display: block;
+            }
+        }
+
+        #footer {
+            display: flex;
+        }
+    </style>
+    <body>
+        <header id="header">
+            <img id="header-img" src="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#primary">Primary</a>
+                <a class="nav-link" href="#second">Second</a>
+                <a class="nav-link" href="#footer">Footer</a>
+            </nav>
+        </header>
+
+        <div id="primary">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/q7tlgZg4Q1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="second">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" id="email" placeholder="Email" name="email">
+                <input type="submit" id="submit"> 
+
+            </form>
+        </div>
+
+        <footer id="footer">
+
+        </footer>
+    </body>
+</html>
