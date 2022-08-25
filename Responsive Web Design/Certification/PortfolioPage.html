@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        @media (max-width: 768px) {
+            #footer {
+                display: block;
+            }
+        }
+    </style>
+    <body>
+        <header id="header">
+            <nav id="navbar">
+                <a class="profile-link" target="_blank" href="#welcome-section">Primary</a>
+                <a class="profile-link" target="_blank" href="#projects">Second</a>
+                <a class="profile-link" target="_blank" href="#footer">Footer</a>
+            </nav>
+        </header>
+
+        <section id="welcome-section">
+            <h1>Welcome</h1>
+        </section>
+
+        <section id="projects">
+            <a id="profile-link" target="_blank" href="#footer">Primary</a>
+
+            <div class="project-tile"></div>
+            <div class="project-tile"></div>
+            <div class="project-tile"></div>
+        </section>
+
+        <footer id="footer">
+
+        </footer>
+    </body>
+</html>
