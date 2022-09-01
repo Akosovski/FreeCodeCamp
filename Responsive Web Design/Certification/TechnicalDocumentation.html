@@ -34,7 +34,7 @@
             margin-left: 20px;
             text-decoration: none;
         }
-        #Virt_Env, #Install_Apps, #Set_Database, #Fourth_Header, #Fifth_Header{
+        #Virt_Env, #Install_Apps, #Set_Database, #Create_Superuser, #Fifth_Header{
             margin: 20px;
         }
         code{
@@ -88,7 +88,7 @@
                     <a href="#Virt_Env" class="nav-link">Virt Env</a>
                     <a href="#Install_Apps" class="nav-link">Install Apps</a>
                     <a href="#Set_Database" class="nav-link">Set Database</a>
-                    <a href="#Fourth_Header" class="nav-link">Fourth Header</a>
+                    <a href="#Create_Superuser" class="nav-link">Create Superuser</a>
                     <a href="#Fifth_Header" class="nav-link">Fifth Header</a>
                 </div> 
             </nav>
@@ -152,14 +152,16 @@
 
             <hr>
 
-            <section class="main-section" id="Fourth_Header">
-                <header><h3>Fourth Header</h3></header>
+            <section class="main-section" id="Create_Superuser">
+                <header><h3>Create Superuser</h3></header>
                 <br>
-                <p>Fourth Stage</p>
+                <p>After the application is running and started to run with accounts, we can create a new account as a superuser.</p>
                 <br>
-                <p></p>
-                <li></li>
-                <code></code>
+                <li>With the help of the terminal, we can use this line command to create a new account :</li>
+                <br><br>
+                <code>python manage.py createsuperuser</code>
+                <br><br><br>
+                <p>It will then asks for credentials to be used, and after the step is complete, the account will be created.</p>
             </section><br>
             
             <hr>
@@ -167,7 +169,7 @@
             <section class="main-section" id="Fifth_Header">
                 <header><h3>Fifth Header</h3></header>
                 <br>
-                <p>Fifth Stage</p>
+                <p>Fourth Stage</p>
                 <br>
                 <p></p>
                 <li></li>
