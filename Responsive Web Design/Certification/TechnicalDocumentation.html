@@ -34,7 +34,7 @@
             margin-left: 20px;
             text-decoration: none;
         }
-        #First_Header, #Second_Header, #Third_Header, #Fourth_Header, #Fifth_Header{
+        #Virt_Env, #Install_Apps, #Set_Database, #Fourth_Header, #Fifth_Header{
             margin: 20px;
         }
         code{
@@ -85,9 +85,9 @@
             <nav id="navbar">
                 <header><h3>My Django Personal Docs</h3></header>
                 <div class="flex-container">
-                    <a href="#First_Header" class="nav-link">First Header</a>
-                    <a href="#Second_Header" class="nav-link">Second Header</a>
-                    <a href="#Third_Header" class="nav-link">Third Header</a>
+                    <a href="#Virt_Env" class="nav-link">Virt Env</a>
+                    <a href="#Install_Apps" class="nav-link">Install Apps</a>
+                    <a href="#Set_Database" class="nav-link">Set Database</a>
                     <a href="#Fourth_Header" class="nav-link">Fourth Header</a>
                     <a href="#Fifth_Header" class="nav-link">Fifth Header</a>
                 </div> 
@@ -95,8 +95,8 @@
         </header>
 
         <main id="main-doc">
-            <section class="main-section" id="First_Header">
-                <header><h3>First Header</h3></header>
+            <section class="main-section" id="Virt_Env">
+                <header><h3>Virt Env</h3></header>
                 <br>
                 <p>To Install Python virtual environment, you need to have a pip installed.</p>
                 <br>
@@ -116,8 +116,8 @@
             
             <hr>
 
-            <section class="main-section" id="Second_Header">
-                <header><h3>Second Header</h3></header>
+            <section class="main-section" id="Install_Apps">
+                <header><h3>Install Apps</h3></header>
                 <br>
                 <p>To install a new application within the framework, we need to use the following command :</p>
                 <br><br>
@@ -134,14 +134,20 @@
 
             <hr>
 
-            <section class="main-section" id="Third_Header">
-                <header><h3>Third Header</h3></header>
+            <section class="main-section" id="Set_Database">
+                <header><h3>Set Database</h3></header>
                 <br>
-                <p>Third Stage</p>
+                <p>In this case, we use PostgreSQL to create a database and then connect it to the django.</p>
                 <br>
-                <p></p>
-                <li></li>
-                <code></code>
+                <p>On the settings.py file, we set the parameters for the database as follows :</p>
+                <br><br>
+                <code>
+                    DATABASES = {'default':{ENGINE, NAME, USER, PASSWORD, HOST, PORT}}
+                </code>
+                <br><br><br>
+                <li>You need to fill the parameters of Engine, Name, User, Password, Host and Port in your settings.py file as shown.</li>
+                <br>
+                <p>Once you set them, the database will be automatically run after you relaunch the application.</p>
             </section><br>
 
             <hr>
