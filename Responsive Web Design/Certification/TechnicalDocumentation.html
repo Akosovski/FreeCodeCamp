@@ -34,7 +34,7 @@
             margin-left: 20px;
             text-decoration: none;
         }
-        #Virt_Env, #Install_Apps, #Set_Database, #Create_Superuser, #Fifth_Header{
+        #Virt_Env, #Install_Apps, #Set_Database, #Create_Superuser, #Static_Files{
             margin: 20px;
         }
         code{
@@ -89,7 +89,7 @@
                     <a href="#Install_Apps" class="nav-link">Install Apps</a>
                     <a href="#Set_Database" class="nav-link">Set Database</a>
                     <a href="#Create_Superuser" class="nav-link">Create Superuser</a>
-                    <a href="#Fifth_Header" class="nav-link">Fifth Header</a>
+                    <a href="#Static_Files" class="nav-link">Static Files</a>
                 </div> 
             </nav>
         </header>
@@ -166,14 +166,16 @@
             
             <hr>
 
-            <section class="main-section" id="Fifth_Header">
-                <header><h3>Fifth Header</h3></header>
+            <section class="main-section" id="Static_Files">
+                <header><h3>Static Files</h3></header>
                 <br>
-                <p>Fourth Stage</p>
+                <p>Django uses static files to store information of stylesheets and javascript files in the application.</p>
                 <br>
-                <p></p>
-                <li></li>
-                <code></code>
+                <li>Once the files has been created, we can collect them to be used by typing the command line below into the terminal :</li>
+                <br><br>
+                <code>python manage.py collectstatic</code>
+                <br><br><br>
+                <p>After that Django will automatically collect and store the static files in the application to be used.</p>
             </section><br>
 
         </main>
