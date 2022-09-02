@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>My Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Inter&display=swap" rel="stylesheet">
     </head>
     <style>
+        *{
+            margin: 0;
+            scroll-behavior: smooth;
+        }
         header {
             position: fixed;
             width: 100%;
+            height: 22px;
             top: 0;
             left: 0;
+            background-color: maroon;
+            color: white;
+            font-family: 'Exo 2', sans-serif;
+            padding: 25px;
+            padding-top: 18px;
+            display: flex;
+        }
+        .profile-link{
+            margin-right: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+        }
+        #welcome-section{
+            display: flex;
+            flex-direction: column;
+            background-color: darkgrey;
+            height: 100vh;
+        }
+        #welcome-title{
+            margin: auto;
+            margin-bottom: 0;
+            font-size: 45px;
+            font-family: 'Inter', sans-serif;
+        }
+        #welcome-desc{
+            font-size: 40px;
+            margin: auto;
+            margin-top: 0;
+            font-family: 'Alumni Sans Pinstripe', sans-serif;
+            font-weight: bold;
         }
         @media (max-width: 768px) {
             #footer {
@@ -28,7 +68,8 @@
         </header>
 
         <section id="welcome-section">
-            <h1>Welcome</h1>
+            <h1 id="welcome-title">Hi Traveler! <span style="color:maroon;">I am Akosovski</span></h1>
+            <p id="welcome-desc">a web developer</p>
         </section>
 
         <section id="projects">
