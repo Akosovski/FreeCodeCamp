@@ -41,14 +41,16 @@
         #welcome-section{
             display: flex;
             flex-direction: column;
-            background-color: darkgrey;
+            background-color: rgb(52, 63, 86);
             height: 100vh;
+            text-align: center;
         }
         #welcome-title{
             margin: auto;
             margin-bottom: 0;
             font-size: 50px;
             font-family: 'Inter', sans-serif;
+            color: rgb(100, 121, 162);
         }
         #welcome-desc{
             font-size: 40px;
@@ -56,6 +58,8 @@
             margin-top: 0;
             font-family: 'Alumni Sans Pinstripe', sans-serif;
             font-weight: bold;
+            color: lightgrey;
+            font-style: italic;
         }
         #projects{
             display: flex;
@@ -68,35 +72,55 @@
             font-size: 32px;
             font-family: 'Inter', sans-serif;
             color: white;
+            text-align: center;
         }
         #liner{
-            min-width: 500px;
-            max-width: 600px;
+            min-width: 650px;
+            max-width: 750px;
             margin: auto;
             margin-top: 7px;
         }
+        .tile-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-tile .card{
+            width: 300px;
+            height: 300px;
+            background-color: lightgrey;
+            margin: 30px;
+            margin-top: 50px;
+        }
+
+
         #footer{
             display: flex;
-            background-color: rgb(49,57,65);
+            background-color: rgb(52, 63, 86);
             flex-direction: column;
             height: auto;
+            text-align: center;
         }
         #footer-title{
             margin: auto;
             margin-top: 50px;
             color: white;
             font-family: 'Inter', sans-serif;
-            font-size: 30px;
+            font-size: 32px;
         }
         #footer-desc{
             margin: auto;
             margin-top: 5px;
             font-family: 'Alumni Sans Pinstripe', sans-serif;
             color: white;
-            font-size: 27px;
+            font-size: 28px;
             margin-bottom: 50px;
         }
         @media (max-width: 768px) {
+            #liner{
+                margin-top: 25px;
+            }
             #footer {
                 display: block;
             }
@@ -112,26 +136,49 @@
         </header>
 
         <section id="welcome-section">
-            <h1 id="welcome-title">Hi Traveler! <span style="color:maroon;">I am Akosovski</span></h1>
+            <h1 id="welcome-title">Hi Traveler! <span style="color:white;">I am Akosovski</span></h1>
             <p id="welcome-desc">a web developer</p>
         </section>
 
         <section id="projects">
-            <h1 id="projects-title">These are some of my projects</h1>
+            <h1 id="projects-title">Take a look at some of my projects</h1>
             <hr id="liner">
             <a id="profile-link" target="_blank" href="#"></a>
 
-            <div class="project-tile"></div>
-            <div class="project-tile"></div>
-            <div class="project-tile"></div>
-
+            <div class="tile-container">
+                <div class="project-tile">
+                    <div class="card">
+                        
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <div class="card">
+    
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <div class="card">
+    
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <div class="card">
+    
+                    </div>
+                </div>
+            </div>
+            
+            
             <br><br><br>
         </section>
 
         <footer id="footer">
-            <h1 id="footer-title">Let's work together...</h1>
-            <p id="footer-desc">How do you take your coffee?</p>
+            <h1 id="footer-title">Let's work together!</h1>
+            <p id="footer-desc">Pick your roosters.</p>
 
+            <div class="links-container">
+                
+            </div>
         </footer>
     </body>
 </html>
