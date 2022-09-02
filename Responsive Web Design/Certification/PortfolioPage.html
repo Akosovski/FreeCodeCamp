@@ -9,9 +9,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Inter&display=swap" rel="stylesheet">
     </head>
     <style>
-        *{
-            margin: 0;
+        html{
             scroll-behavior: smooth;
+        }
+        *{
+            margin: 0; 
         }
         header {
             position: fixed;
@@ -32,6 +34,10 @@
             color: white;
             font-size: 18px;
             font-family: 'Inter', sans-serif;
+            transition: all 300ms;
+        }
+        .profile-link:hover {
+            color: grey;
         }
         #welcome-section{
             display: flex;
@@ -52,6 +58,37 @@
             font-family: 'Alumni Sans Pinstripe', sans-serif;
             font-weight: bold;
         }
+        #projects{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(69,87,124);
+        }
+        #projects-title{
+            margin: auto;
+            margin-top: 45px;
+            font-size: 28px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            color: white;
+        }
+        #liner{
+            min-width: 450px;
+            max-width: 540px;
+            margin: auto;
+            margin-top: 7px;
+        }
+        #footer{
+            display: flex;
+            background-color: rgb(49,57,65);
+        }
+        #footer-title{
+            margin: auto;
+            margin-top: 25px;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 25px;
+            font-weight: 300;
+        }
         @media (max-width: 768px) {
             #footer {
                 display: block;
@@ -61,9 +98,9 @@
     <body>
         <header id="header">
             <nav id="navbar">
-                <a class="profile-link" target="_blank" href="#welcome-section">Primary</a>
-                <a class="profile-link" target="_blank" href="#projects">Second</a>
-                <a class="profile-link" target="_blank" href="#footer">Footer</a>
+                <a class="profile-link" target="_blank" href="#welcome-section">Welcome</a>
+                <a class="profile-link" target="_blank" href="#projects">My Projects</a>
+                <a class="profile-link" target="_blank" href="#footer">About Me</a>
             </nav>
         </header>
 
@@ -73,15 +110,18 @@
         </section>
 
         <section id="projects">
-            <a id="profile-link" target="_blank" href="#footer">Primary</a>
+            <h1 id="projects-title">These are some of my projects</h1>
+            <hr id="liner">
 
             <div class="project-tile"></div>
             <div class="project-tile"></div>
             <div class="project-tile"></div>
+
+            <br><br><br>
         </section>
 
         <footer id="footer">
-
+            <h1 id="footer-title">About Me</h1>
         </footer>
     </body>
 </html>
