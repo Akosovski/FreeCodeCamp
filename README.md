@@ -1,5 +1,5 @@
 ## freeCodeCamp
-This repository is intended to store lessons and practices for freeCodeCamp certification.
+This repository is intended to store basic syntax practices..
 
 ---
 
