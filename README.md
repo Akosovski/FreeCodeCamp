@@ -1,4 +1,4 @@
-## freeCodeCamp
+## Practices
 This repository is intended to store basic syntax practices..
 
 ---
