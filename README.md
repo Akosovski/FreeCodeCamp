@@ -1,5 +1,5 @@
 ## Practices
-This repository is intended to store basic syntax practices..
+This repository is intended to store basic syntax practices.
 
 ---
 
